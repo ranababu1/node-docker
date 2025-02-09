@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports API Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #f0f2f5;
+        }
+
+        header {
+            background: #20232a;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 1rem 0;
+        }
+
+        .routes {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        a {
+            color: #002d4b;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid #002d4b;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background: #002d4b;
+            color: white;
+        }
+
+        footer {
+            background: #20232a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 1rem;
+            }
+            
+            .card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sports API Service</h1>
+        <p>Explore top players statistics</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Available Routes</h2>
+            <div class="routes">
+                <a href="/api/route1" target="_blank">Top Cricket Players</a>
+                <a href="/api/route2" target="_blank">Top Football Players</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>API Documentation</h2>
+            <p><strong>Base URL:</strong> <code>/api</code></p>
+            <h3>Endpoints:</h3>
+            <ul>
+                <li><code>GET /route1</code> - Top 10 Cricket Players</li>
+                <li><code>GET /route2</code> - Top 10 Football Players</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Sports API Service. All data is for demonstration purposes.</p>
+    </footer>
+</body>
+</html>
